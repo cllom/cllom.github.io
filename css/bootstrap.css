@@ -4350,6 +4350,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
+    color: aliceblue;
+    
 }
 .navbar-toggle:focus {
   outline: 0;
