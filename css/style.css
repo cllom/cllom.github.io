@@ -47,7 +47,7 @@ p {
 }
 
 a:hover, a:focus, a:active, a.active {
-    color: #fec503;
+    color: #222;
 }
 a, a:hover, a:focus, a:active, a.active {
     outline: 0;
@@ -55,7 +55,7 @@ a, a:hover, a:focus, a:active, a.active {
 
 ::selection {
     text-shadow: none;
-    background: #fed136;
+    background: #222;
 }
 
 @media (min-width: 768px) {
@@ -87,7 +87,6 @@ section {
 --------------------*/
 
 .navbar-default {
-	background-color: #F1F1F1;
 	border-color: transparent
 }
 .navbar-default .navbar-brand {
@@ -95,20 +94,20 @@ section {
     padding: 5px;
 }
 .navbar-default .navbar-brand:hover,.navbar-default .navbar-brand:focus,.navbar-default .navbar-brand:active,.navbar-default .navbar-brand.active {
-	color: #fec503
+	color: #fec503;
 }
 .navbar-default .navbar-collapse {
 	border-color: rgba(255,255,255,.02)
 }
 .navbar-default .navbar-toggle {
-	background-color: #fed136;
-	border-color: #fed136
+	background-color: #c1c1c1;
+	border-color: #c1c1c1;
 }
 .navbar-default .navbar-toggle .icon-bar {
-	background-color: #fff
+	background-color: #fff;
 }
 .navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus {
-	background-color: #fed136
+	background-color: #222222;
 }
 .navbar-default .nav li a {
     font-family: "Roboto",sans-serif;
@@ -131,7 +130,7 @@ section {
 .navbar-default .navbar-nav>.active>a {
 	border-radius: 0;
 	color: #fff;
-	background-color: #fed136
+	background-color: #222222;
 }
 .navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus {
 	color: #fff;
@@ -295,7 +294,6 @@ figure {
 	position: relative;
     overflow: hidden;
     margin: 0 1px 1px 0;
-    background: #726FB9;
     text-align: center;
     cursor: pointer;	
 }
@@ -324,12 +322,12 @@ figcaption {
 }
 
 figure.effect-bubba {
-	background: #000;
 	margin-bottom: 1px;
 }
 
 figure.effect-bubba img {
-	opacity: 0.8;
+	opacity: 1;
+    padding: 30px;
 	-webkit-transition: opacity 0.35s;
 	transition: opacity 0.35s;
 }
@@ -569,7 +567,7 @@ font-size: 11px;
 }
 
 .modal-works span {
-	background-color: #FED136;
+	background-color: #222;
     margin-right: 15px;
     padding: 5px 10px;
 }
@@ -648,7 +646,7 @@ font-size: 11px;
     transition: 1s;
 }
 #back-top a:hover {
-    background: #fed136;
+    background: #222;
 }
 /* arrow icon (span tag) */
 #back-top i {
