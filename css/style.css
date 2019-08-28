@@ -43,7 +43,7 @@ p {
 	letter-spacing: 0.2px;
 	color: #252525;
     margin: 20px auto;
-    max-width: 70%;
+    max-width: 90%;
 }
 
 a:hover, a:focus, a:active, a.active {
@@ -87,7 +87,7 @@ section {
 --------------------*/
 
 .navbar-default {
-	border-color: transparent
+	border-color: transparent;
 }
 .navbar-default .navbar-brand {
 	color: #fff;
@@ -141,7 +141,7 @@ section {
 	.navbar-default
 	{
 		background-color: transparent;
-		padding: 40px 0 0px;
+		padding: 10px 0 0px;
     	-webkit-transition:padding .3s;
 		-moz-transition:padding .3s;
 		transition:padding .3s;
@@ -333,7 +333,7 @@ figure.effect-bubba img {
 }
 
 figure.effect-bubba:hover img {
-	opacity: 0.4;
+	opacity: 0.05;
 }
 
 figure.effect-bubba figcaption::before,
@@ -344,7 +344,7 @@ figure.effect-bubba figcaption::after {
 	bottom: 30px;
 	left: 30px;
 	content: '';
-	opacity: 0;
+	opacity: 0.9;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
 }
@@ -364,7 +364,7 @@ figure.effect-bubba figcaption::after {
 }
 
 figure.effect-bubba h2 {
-    color: #fff;
+    color: #000;
     font-size: 15px;
     font-weight: 700;
     text-transform: uppercase;
@@ -376,7 +376,7 @@ figure.effect-bubba h2 {
 }
 
 figure.effect-bubba p {
-    color: #fff;
+    color: #000;
     font-size: 13px;
     font-weight: 500;
 	padding: 20px 2.5em;
@@ -670,4 +670,299 @@ and (max-width : 480px) {
     margin-top: 7px;
     font-size: 20px;
 }
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    min-height: 400px;
+    overflow: auto;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 7px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+/* Style for documentation */
+
+.document {
+	/*padding: 5px 5px;*/
+
+	height: 100%;
+    min-width: 100%;
+   /* margin: auto;*/
+
+    
+}
+
+.fixIndex{
+    
+}
+
+.index{
+	float: left;
+    height: 88%;
+    width: 200px;
+    border: 1px solid black;
+    margin-left: 20px;
+	padding: 0px 10px 0px 10px ;
+	padding: 0px 10px 0px 10px ;	
+    
+
+}
+
+.subDocument{
+
+    margin: auto;
+	padding: 10px 0px 0px 280px;
+    min-width: 600px;
+	height: 120%;
+	border: 0px solid black;
+
+
+}
+
+.image{
+	float: left;
+    position: fixed;
+	margin: 0px;
+	padding: 0px;
+	max-width: 8%;
+    min-width: 370px;
+	min-height: 250px;
+    max-height: 8%;
+	border: 1px solid black;
+    
+}
+
+.imageProject{
+	float: left;
+    position: relative;
+	margin: 0px;
+	max-width: 8%;
+    min-width: 370px;
+	min-height: 250px;
+	border: 0px solid black;
+    position: relative;
+}
+
+.project{
+	
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+	padding: 5px;
+	max-width: 50%;
+    min-width: 900px;
+	min-height: 250px;
+    max-height: 10%;
+	border: 1px solid black;
+    
+
+}
+
+.positionRelative{
+    position: relative;
+    text-align: center;
+    height: 270px;
+    width: 100%;
+
+}
+
+.projectDescription{
+    margin: auto;
+	padding: 0px 0px 0px 380px;
+	max-width: 520px;
+    min-width: 520px;
+    text-align: left;
+	border: 0px solid black;
+
+    
+}
+
+.index > li {
+	padding: 0px;
+	font-size: 12px;
+    list-style: none outside none;
+}
+.index > h1 {
+	padding: 0px;
+	font-size: 13px;
+}
+
+.subDocument >li {
+    margin: 10px 30% 0px 0px;
+    
+}
+.subDocument > h1 {
+	padding: 0 0px 0 0px;
+	font-size: 17px;
+}
+
+.subDocument > h2 {
+    text-align: left;
+    text-decoration: underline;
+    margin: 10px 0px;
+	padding: 0px;
+	font-size: 15px;
+}
+
+.subDocument > p {
+    margin: 10px 15% 10px 0px;
+    text-align: justify;
+	padding: 0px;
+	font-size: 15px;
+}
+.subDocument > h3 {
+    text-align: center;
+    margin: 10px 0px;
+	padding: 0px;
+	font-size: 15px;
+}
+
+#tab {
+	/*margin: 0px 40px 0px 30px;*/
+    margin: auto 20% 0 10%;
+    position: relative;
+    text-align: center;
+}
+
+
+
+/*MODAL IMAGE*/
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+
+/*css for code box*/
+
+codeBox {
+    display: block;
+    padding: 9.5px;
+    align-content: center;
+    margin: auto 30% 0 20%;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: auto;
+}
+code {
+    font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
 }
