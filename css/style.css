@@ -32,12 +32,14 @@ h6 {
 	font-weight: 200;
 	letter-spacing: 0.4px;
 	font-family: "Raleway", Sans-serif;
-	color: #232323;
+	color: #000000;
+    margin: 0px 20%;
+    font-weight: 500;
 }
 
 p {
 	font-family: 'Raleway', sans-serif;
-	font-size: 18px;
+	font-size: 25px;
 	font-weight: 300;
 	line-height: 28px;
 	letter-spacing: 0.2px;
@@ -46,11 +48,13 @@ p {
     max-width: 90%;
 }
 
+
 a:hover, a:focus, a:active, a.active {
     color: #222;
 }
 a, a:hover, a:focus, a:active, a.active {
-    outline: 0;
+    outline: 0
+
 }
 
 ::selection {
