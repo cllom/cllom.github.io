@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<script src="w3.js"></script>   
+    
+    <head>
+    
+        <title>Students</title>
+        <!-- Bootstrap core CSS -->
+  
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link href="css/style.css" rel="stylesheet">
+
+        
+    </head>
+    
+    
+    <body>
+        
+        
+        <!-- header-->
+        <div w3-include-html="header.html"></div>
+          
+        
+        
+                    <div class="document">
+                
+                
+                <!-- Second Column -->
+		          <div class="subDocument">
+			         <h1><b>2019</b></h1>
+                        <p>Biyun Fall Bootcamp</p>
+                      <ul>
+                        <li><a href="https://keyunhao.github.io/index.html">Alex</a></li>
+                        <li><a href="https://killmymemory.github.io/">Izzy</a></li>
+                        <li><a href="https://allen-bit.github.io/">Allen</a></li>
+                        <li><a href="https://maxdalord.github.io/">Max</a></li>
+                        <li><a href="https://c6h806.github.io/">Richard</a></li>
+                      </ul>
+                      
+                        
+		          </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                     
+                
+	       </div>
+        
+        <p id="back-top">
+			<a href="#top"><i class="fa fa-angle-up"></i></a>
+		</p>
+		<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large">
+			<div class="container text-center">
+                <a class="fa fa-facebook-official w3-hover-opacity" href="https://www.facebook.com/marcello.cello" target="_blank"></a>
+                <a class="fa fa-instagram w3-hover-opacity" href="https://www.instagram.com/cello.tania/" target="_blank"></a>
+                <a class="fa fa-linkedin w3-hover-opacity" href="https://www.linkedin.com/in/marcello-tania-588429176/" target="_blank"></a>
+                <a class="fa fa-github w3-hover-opacity" href="https://github.com/cllom?tab=projects" target="_blank"></a>
+				<a style="color: #999999; text-decoration: none; margin: 0px">
+                <br>©2019</a>
+                <a href="http://marcellotania.com" target="_blank" style="color: #999999; text-decoration: none;"> Marcello Tania</a>
+                <a style="color: #999999; text-decoration: none; margin: 0px"> | All rights reserved </a>
+			</div>
+		</footer>
+
+    
+        
+
+        
+        
+ 
+        
+
+
+        <!--Include script include html -->
+        <script>
+                w3.includeHTML();
+        </script>  
+        
+        
+        <!--Include dropdown content -->
+        <script>
+            /*java script*/
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function dropDown() {
+            document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script>
+        
+        <!-- Bootstrap core JavaScript
+			================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/SmoothScroll.js"></script>
+		<script src="js/theme-scripts.js"></script>
+        
+    </body>
+    
+    
+</html>
