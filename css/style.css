@@ -25,7 +25,6 @@ body {
 
 h1,
 h2,
-h3,
 h4,
 h5,
 h6 {
@@ -34,6 +33,10 @@ h6 {
 	font-family: "Raleway", Sans-serif;
 	color: #000000;
     font-weight: 500;
+}
+
+h3{
+    font-size: 15px;
 }
 
 h2{
