@@ -33,8 +33,11 @@ h6 {
     letter-spacing: 0.4px;
 	font-family: "Raleway", Sans-serif;
 	color: #000000;
-    margin: 0px 10%;
     font-weight: 500;
+}
+
+h2{
+    margin: 0px 10%;
 }
 
 p {
