@@ -360,12 +360,76 @@
 							<span>Maker</span>
 							<span>Diver</span>
 							<span>Yogi</span>
+							<span>Teacher</span>
 						</div>
 					</div>
 				</div>
 			</div>
+
+			<br>
+			
+
+
+		<!-- Slideshow container -->
+		<div class="slideshow-container">
+
+			<!-- Full-width images with number and caption text -->
+			<div class="mySlides fade">
+			<div class="numbertext">1 / 3</div>
+			<img src="images/profile/remoteTeaching.png" style="width:100%">
+			<div class="text">FabLab O Instructor</div>
+			</div>
+		
+			<div class="mySlides fade">
+			<div class="numbertext">2 / 3</div>
+			<img src="images/profile/diver.png" style="width:100%">
+			<div class="text">Diver</div>
+			</div>
+		
+			<div class="mySlides fade">
+			<div class="numbertext">3 / 3</div>
+			<img src="images/profile/yogi.jpg" style="width:50%">
+			<div class="text">Yoga Teacher</div>
+			</div>
+
+			
+		
+			<!-- Next and previous buttons -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+		
+		<!-- The dots/circles -->
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+		</div>
+
+		<script>
+			var slideIndex = 0;
+			showSlides();
+
+			function showSlides() {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			slideIndex++;
+			if (slideIndex > slides.length) {slideIndex = 1}
+			slides[slideIndex-1].style.display = "block";
+			setTimeout(showSlides, 2000); // Change image every 2 seconds
+			}
+		</script>
+
+
+
+
 			<!-- /.container -->
 		</section>
+
 
 		<p id="back-top">
 			<a href="#top"><i class="fa fa-angle-up"></i></a>
@@ -377,9 +441,9 @@
                 <a class="fa fa-linkedin w3-hover-opacity" href="https://www.linkedin.com/in/marcello-tania-588429176/" target="_blank"></a>
                 <a class="fa fa-github w3-hover-opacity" href="https://github.com/cllom?tab=projects" target="_blank"></a>
 				<a style="color: #999999; text-decoration: none; margin: 0px">
-                <br>©2019</a>
+                <br>©2020</a>
                 <a href="http://marcellotania.com" target="_blank" style="color: #999999; text-decoration: none;"> Marcello Tania</a>
-                <a style="color: #999999; text-decoration: none; margin: 0px"> ©2020 | All rights reserved </a>
+                <a style="color: #999999; text-decoration: none; margin: 0px"> | All rights reserved </a>
 			</div>
 		</footer>
 
