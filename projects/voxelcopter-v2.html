@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Voxelcopter V2 — modular multicopter built from functional voxels at the MIT Center for Bits and Atoms.">
+	<meta name="author" content="Marcello Tania">
+	<link rel="icon" href="../favicon.ico">
+	<title>Voxelcopter V2 — Marcello Tania</title>
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href="../css/style.css" rel="stylesheet">
+	<link href="../css/portfolio.css" rel="stylesheet">
+</head>
+<body id="page-top">
+
+	<nav class="navbar navbar-default navbar-fixed-top" id="main-nav">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-nav" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="../index.html">Marcello Tania</a>
+			</div>
+			<div class="collapse navbar-collapse" id="site-nav">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="../index.html#about">About</a></li>
+					<li><a href="../index.html#portfolio">Work</a></li>
+					<li><a href="../index.html#contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<section class="project-page">
+		<div class="container">
+			<p class="project-back"><a href="../index.html#portfolio">&larr; Back to portfolio</a></p>
+
+			<div class="project-header text-center">
+				<span class="section-label">MIT Center for Bits and Atoms</span>
+				<h1>Voxelcopter V2</h1>
+				<p class="project-subtitle">Modular multicopter &middot; Functional voxels &middot; Rapid assembly</p>
+			</div>
+
+			<div class="modal-works project-tags">
+				<span>Robotics</span><span>UAV</span><span>Modular Systems</span>
+			</div>
+
+			<div class="project-content">
+				<p><em>Voxelcopter V2</em> is the next iteration of a modular construction kit for rapid prototyping and assembly of multicopter unmanned aerial systems at the <a href="https://cba.mit.edu/" target="_blank" rel="noopener">MIT Center for Bits and Atoms</a>. Building on the original <a href="https://dspace.mit.edu/handle/1721.1/153155" target="_blank" rel="noopener">Voxelcopter</a> demo presented at SCF&nbsp;&rsquo;23, the system uses reconfigurable functional voxels that route power and data through the airframe.</p>
+
+				<h2>Background — Voxelcopter V1</h2>
+				<p>Different UAV applications require different payloads, ranges, and geometries — yet conventional designs are hard to reconfigure without a full redesign. Voxelcopter addresses this with electromechanical voxels based on a cuboct unit cell: PCB faces route power, ground, and communications, assembling into lightweight stiff structures (~47&nbsp;g per voxel, 65&nbsp;mm side length).</p>
+				<ul>
+					<li><strong>Primary controller voxel</strong> — ESP32 and ATtiny412 for command and feedback across the voxel bus</li>
+					<li><strong>Secondary motor voxels</strong> — ATtiny412 per propeller for distributed control</li>
+					<li><strong>Flight software</strong> — custom library on ESP32 for pitch/roll stabilization and web-based throttle control</li>
+				</ul>
+				<p>A quadcopter was assembled, flight-tested, and disassembled for reuse — demonstrating modularity and in-flight performance (<a href="https://doi.org/10.1145/3623263.3629155" target="_blank" rel="noopener">Wang, Smith &amp; Gershenfeld, 2023</a>).</p>
+
+				<h2>Voxelcopter V2</h2>
+				<p>Version 2 extends the platform with updated hardware, software, and assembly workflows. The project repository documents CAD, electronics, and flight integration for the modular aerial system and is developed in collaboration with the CBA voxel robotics group.</p>
+
+				<h2>Related Work at CBA</h2>
+				<ul class="project-links">
+					<li><a href="projects/voxel-robot-cad.html">Voxel Robot CAD — live assembly tools</a></li>
+					<li><a href="projects/walking-robot.html">Walking Robot — modular voxel locomotion</a></li>
+				</ul>
+
+				<h2>Links</h2>
+				<ul class="project-links">
+					<li><a href="https://gitlab.cba.mit.edu/miana/voxelcopter-v2" target="_blank" rel="noopener">GitLab repository</a> (CBA access required)</li>
+					<li><a href="https://dspace.mit.edu/handle/1721.1/153155" target="_blank" rel="noopener">Voxelcopter paper — MIT DSpace</a></li>
+					<li><a href="https://cba.mit.edu/docs/papers/23.11.voxelcopter.pdf" target="_blank" rel="noopener">Voxelcopter paper (PDF)</a></li>
+					<li><a href="https://doi.org/10.1145/3623263.3629155" target="_blank" rel="noopener">DOI: 10.1145/3623263.3629155</a></li>
+					<li><a href="http://cba.mit.edu/people/miana" target="_blank" rel="noopener">Miana Smith — CBA</a></li>
+				</ul>
+
+				<h2>Credits</h2>
+				<p>Original Voxelcopter: Sophia Wang, Miana Smith, and Neil Gershenfeld (MIT CBA, 2023). V2 development led by <a href="http://cba.mit.edu/people/miana" target="_blank" rel="noopener">Miana Smith</a>.</p>
+			</div>
+		</div>
+	</section>
+
+	<footer class="site-footer">
+		<div class="container text-center">
+			<p class="footer-copy">&copy; 2026 <a href="http://marcellotania.com">Marcello Tania</a>. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/SmoothScroll.js"></script>
+	<script src="../js/theme-scripts.js"></script>
+</body>
+</html>

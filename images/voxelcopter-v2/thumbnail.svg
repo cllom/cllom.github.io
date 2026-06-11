@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Voxelcopter V2">
+  <rect width="400" height="300" fill="#ececec"/>
+  <g fill="none" stroke="#666" stroke-width="2">
+    <rect x="175" y="125" width="50" height="50" rx="4"/>
+    <line x1="200" y1="125" x2="120" y2="75"/>
+    <line x1="200" y1="125" x2="280" y2="75"/>
+    <line x1="200" y1="175" x2="120" y2="225"/>
+    <line x1="200" y1="175" x2="280" y2="225"/>
+    <circle cx="120" cy="75" r="18"/>
+    <circle cx="280" cy="75" r="18"/>
+    <circle cx="120" cy="225" r="18"/>
+    <circle cx="280" cy="225" r="18"/>
+  </g>
+  <text x="200" y="268" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#888">Voxelcopter V2</text>
+</svg>

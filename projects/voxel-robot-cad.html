@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Voxel Robot CAD — browser-based design and live assembly tools for voxel lattice robotics at MIT Center for Bits and Atoms.">
+	<meta name="author" content="Marcello Tania">
+	<link rel="icon" href="../favicon.ico">
+	<title>Voxel Robot CAD — Marcello Tania</title>
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href="../css/style.css" rel="stylesheet">
+	<link href="../css/portfolio.css" rel="stylesheet">
+</head>
+<body id="page-top">
+
+	<nav class="navbar navbar-default navbar-fixed-top" id="main-nav">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-nav" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="../index.html">Marcello Tania</a>
+			</div>
+			<div class="collapse navbar-collapse" id="site-nav">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="../index.html#about">About</a></li>
+					<li><a href="../index.html#portfolio">Work</a></li>
+					<li><a href="../index.html#contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<section class="project-page">
+		<div class="container">
+			<p class="project-back"><a href="../index.html#portfolio">&larr; Back to portfolio</a></p>
+
+			<div class="project-header text-center">
+				<span class="section-label">MIT Center for Bits and Atoms</span>
+				<h1>Voxel Robot CAD</h1>
+				<p class="project-subtitle">Voxel lattice assembly &middot; Live robot control &middot; Three.js</p>
+			</div>
+
+			<div class="modal-works project-tags">
+				<span>Robotics</span><span>Software</span><span>Digital Fabrication</span>
+			</div>
+
+			<div class="project-content">
+				<div class="project-gallery project-gallery--contain">
+					<figure class="gallery-item gallery-item--wide">
+						<div class="gallery-image-wrap">
+							<img src="../images/voxel-robot-cad/voxel-mobile-robot.jpg" alt="Voxel mobile robot">
+						</div>
+						<figcaption>Mobile voxel assembler robot</figcaption>
+					</figure>
+				</div>
+
+				<p><em>Voxel Robot CAD</em> is a browser-based toolchain for designing and assembling voxel lattice structures with a mobile robot. Developed at the <a href="https://cba.mit.edu/" target="_blank" rel="noopener">MIT Center for Bits and Atoms</a>, it connects interactive 3D CAD in the browser to real-time robot control for hierarchical discrete lattice assembly.</p>
+
+				<h2>Building Software</h2>
+				<p>An interactive Three.js environment for placing, rotating, and exporting voxel structures. Users click to place voxels, rotate and flip them with keyboard shortcuts, choose voxel type and color from a GUI, and export the finished structure as JSON for downstream assembly.</p>
+
+				<h2>Live CAD</h2>
+				<p>A live assembler interface that connects to the mobile robot over the network. It provides jog controls, tool on/off, scale adjustment, and coordinate-based moves relative to a home position — letting operators assemble designed structures voxel by voxel in real time.</p>
+
+				<div class="project-gallery project-gallery--contain">
+					<figure class="gallery-item gallery-item--wide">
+						<div class="gallery-image-wrap">
+							<video controls>
+								<source src="https://gitlab.cba.mit.edu/mt/voxel-robot-cad/-/raw/main/videos/cba-voxel.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+						</div>
+						<figcaption>Voxel robot assembly at CBA</figcaption>
+					</figure>
+				</div>
+
+				<h2>Credits</h2>
+				<p>Developed with friends and collaborators at MIT CBA:</p>
+				<ul>
+					<li><a href="http://cba.mit.edu/people/miana" target="_blank" rel="noopener">Miana M. Smith</a></li>
+					<li>Alex Kyew</li>
+					<li>Paul Arthur Richard</li>
+				</ul>
+				<p>Marcello Tania</p>
+
+				<h2>Links</h2>
+				<ul class="project-links">
+					<li><a href="https://gitlab.cba.mit.edu/mt/voxel-robot-cad" target="_blank" rel="noopener">GitLab repository</a></li>
+					<li><a href="https://mt.pages.cba.mit.edu/voxel-robot-cad/Building%20Software/buildingSoftware.html" target="_blank" rel="noopener">Building Software — live demo</a></li>
+					<li><a href="https://mt.pages.cba.mit.edu/voxel-robot-cad/live-cad/live-cad.html" target="_blank" rel="noopener">Live CAD — live demo</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<footer class="site-footer">
+		<div class="container text-center">
+			<p class="footer-copy">&copy; 2026 <a href="http://marcellotania.com">Marcello Tania</a>. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/SmoothScroll.js"></script>
+	<script src="../js/theme-scripts.js"></script>
+</body>
+</html>
