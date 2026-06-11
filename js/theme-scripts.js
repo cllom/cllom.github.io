@@ -28,8 +28,9 @@ $(function() {
 
   // scroll body to 0px on click
   $('#back-top a').on("click", function(){
+  	var top = $('#page-top').length ? $('#page-top') : $('body');
   	$('body,html').animate({
-  		scrollTop: 0
+  		scrollTop: top.offset().top
   	}, 800);
   	return false;
   });

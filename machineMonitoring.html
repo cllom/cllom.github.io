@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Machine Monitoring — open source software to monitor laser cutter, CNC router, and 3D printer in a pop-up factory. By Marcello Tania.">
+	<meta name="author" content="Marcello Tania">
+	<link rel="icon" href="favicon.ico">
+	<title>Machine Monitoring — Marcello Tania</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/portfolio.css" rel="stylesheet">
+</head>
+<body id="page-top">
+
+	<nav class="navbar navbar-default navbar-fixed-top" id="main-nav">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-nav" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">Marcello Tania</a>
+			</div>
+			<div class="collapse navbar-collapse" id="site-nav">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html#about">About</a></li>
+					<li><a href="index.html#portfolio">Work</a></li>
+					<li><a href="index.html#contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<section class="project-page">
+		<div class="container">
+			<p class="project-back"><a href="index.html#portfolio">&larr; Back to portfolio</a></p>
+
+			<div class="project-header text-center">
+				<span class="section-label">Open Source</span>
+				<h1>Machine Monitoring</h1>
+				<p class="project-subtitle">Pop-up Factory &middot; MQTT &middot; Fab lab machines</p>
+			</div>
+
+			<div class="project-hero text-center">
+				<img src="images/machineMonitoring/dashboard.png" alt="Machine Monitoring dashboard" class="img-responsive project-image">
+			</div>
+
+			<div class="modal-works project-tags">
+				<span>Software</span><span>MQTT</span><span>Fab Lab</span>
+			</div>
+
+			<div class="project-content">
+				<p>Open source software to monitor three machines in a pop-up factory:</p>
+				<ul>
+					<li>Laser cutter — <a href="https://github.com/Open-Lab-Starter-Kit/OLSK-Small-Laser" target="_blank" rel="noopener">OLSK Small Laser</a></li>
+					<li>CNC router — <a href="https://github.com/Open-Lab-Starter-Kit/OLSK-Small-CNC" target="_blank" rel="noopener">OLSK Small CNC</a></li>
+					<li>3D printer — <a href="https://github.com/Open-Lab-Starter-Kit/OLSK-Small-3D-Printer" target="_blank" rel="noopener">OLSK Small 3D Printer</a></li>
+				</ul>
+
+				<h2>Features</h2>
+				<ul>
+					<li>Machine states — idle, pause, run, or job done</li>
+					<li>Power consumption in watts</li>
+					<li>Loaded G-code file name</li>
+					<li>Job start and end times</li>
+					<li>Summary table of completed jobs</li>
+				</ul>
+				<p>Data from all three machines is saved to two CSV files: one for machine states with timestamps, and one for job details including job ID, G-code path, start time, and end time.</p>
+
+				<h2>Architecture</h2>
+				<p>The system uses an MQTT broker (Mosquitto) to collect data from modified <strong>bCNC</strong> (GRBL) and <strong>Printrun</strong> (Marlin) clients, which publish machine events to topics such as <code>inmachines/cnc/state</code> and <code>inmachines/3dprinter/filename</code>.</p>
+
+				<div class="text-center project-figure">
+					<img src="images/machineMonitoring/mqtt.png" alt="MQTT protocol diagram" class="img-responsive project-image">
+					<p class="project-caption">MQTT protocol diagram</p>
+				</div>
+
+				<div class="text-center project-figure">
+					<img src="images/machineMonitoring/network.png" alt="Network diagram" class="img-responsive project-image">
+					<p class="project-caption">Network diagram</p>
+				</div>
+
+				<h2>Requirements</h2>
+				<ul>
+					<li>MQTT broker server (e.g. Mosquitto on Ubuntu)</li>
+					<li>bCNC for CNC/laser machines running GRBL</li>
+					<li>Printrun for 3D printers running Marlin</li>
+				</ul>
+
+				<h2>Project Files</h2>
+				<ul class="project-links">
+					<li><a href="https://github.com/satshas/machine-monitoring" target="_blank" rel="noopener">GitHub repository</a></li>
+					<li><a href="https://github.com/satshas/machine-monitoring/tree/main/Machine-Monitoring" target="_blank" rel="noopener">Machine Monitoring program</a></li>
+					<li><a href="https://github.com/satshas/machine-monitoring/tree/main/bCNC-cnc" target="_blank" rel="noopener">Modified bCNC</a></li>
+					<li><a href="https://github.com/satshas/machine-monitoring/tree/main/Printrun-master" target="_blank" rel="noopener">Modified Printrun</a></li>
+				</ul>
+
+				<h2>Credits</h2>
+				<p>Developed at <a href="https://www.inmachines.net/" target="_blank" rel="noopener">InMachines Ingrassia GmbH</a>. Development and programming by Marcello Tania.</p>
+
+				<h2>License</h2>
+				<p>Software: GNU Affero General Public License (AGPL). Documentation and media: CC BY-SA 4.0.</p>
+			</div>
+		</div>
+	</section>
+
+	<footer class="site-footer">
+		<div class="container text-center">
+			<p class="footer-copy">&copy; 2026 <a href="http://marcellotania.com">Marcello Tania</a>. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/SmoothScroll.js"></script>
+	<script src="js/theme-scripts.js"></script>
+</body>
+</html>

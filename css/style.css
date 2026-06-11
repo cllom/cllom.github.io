@@ -65,7 +65,14 @@ a, a:hover, a:focus, a:active, a.active {
 
 ::selection {
     text-shadow: none;
-    background: #222;
+    background: #1a5fb4;
+    color: #fff;
+}
+
+::-moz-selection {
+    text-shadow: none;
+    background: #1a5fb4;
+    color: #fff;
 }
 
 @media (min-width: 768px) {

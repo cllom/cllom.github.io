@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="OLSK 3D Scanner V2 — open source 3D scanner with turntable and three cameras. Software by Marcello Tania.">
+	<meta name="author" content="Marcello Tania">
+	<link rel="icon" href="favicon.ico">
+	<title>OLSK 3D Scanner V2 — Marcello Tania</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/portfolio.css" rel="stylesheet">
+</head>
+<body id="page-top">
+
+	<nav class="navbar navbar-default navbar-fixed-top" id="main-nav">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-nav" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">Marcello Tania</a>
+			</div>
+			<div class="collapse navbar-collapse" id="site-nav">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html#about">About</a></li>
+					<li><a href="index.html#portfolio">Work</a></li>
+					<li><a href="index.html#contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<section class="project-page">
+		<div class="container">
+			<p class="project-back"><a href="index.html#portfolio">&larr; Back to portfolio</a></p>
+
+			<div class="project-header text-center">
+				<span class="section-label">Open Source</span>
+				<h1>OLSK 3D Scanner V2</h1>
+				<p class="project-subtitle">Open Lab Starter Kit &middot; 3D scanning</p>
+			</div>
+
+			<div class="project-hero text-center">
+				<img src="images/olsk3dScanner/scanner.png" alt="OLSK 3D Scanner V2" class="img-responsive project-image">
+			</div>
+
+			<div class="modal-works project-tags">
+				<span>3D Scanning</span><span>Open Hardware</span><span>Software</span>
+			</div>
+
+			<div class="project-content">
+				<p>The OLSK 3D Scanner is an open source 3D scanner with a turntable and three cameras for faster capture of 3D models. With a simple, compact design, it can be replicated and assembled in fab labs, schools, or at home. A USB connection lets users process scans with custom software, and camera positions can be adjusted for different object sizes and shapes.</p>
+
+				<h2>Specifications</h2>
+				<ul>
+					<li>3 &times; USB camera modules with Sony IMX179 sensor and autofocus</li>
+					<li>3&nbsp;mm CNC-milled aluminum frame</li>
+					<li>GT2 10&nbsp;mm belt drive</li>
+					<li>NEMA 17 stepper motor</li>
+				</ul>
+
+				<div class="text-center project-figure">
+					<img src="images/olsk3dScanner/details.jpg" alt="OLSK 3D Scanner details" class="img-responsive project-image">
+				</div>
+
+				<h2>Software</h2>
+				<p>I co-designed the scanner software with <a href="https://www.linkedin.com/in/mohammad-sulaiman-tanbari/" target="_blank" rel="noopener">Sulaiman Tanbari</a>:</p>
+				<ul>
+					<li><strong>Laptop side</strong> — receives images from three cameras and controls the turntable</li>
+					<li><strong>PCB side</strong> — firmware to drive the scanner mechanics</li>
+				</ul>
+
+				<div class="text-center project-figure">
+					<img src="images/olsk3dScanner/software.png" alt="OLSK 3D Scanner software interface" class="img-responsive project-image">
+				</div>
+
+				<h2>Project Files</h2>
+				<ul class="project-links">
+					<li><a href="https://github.com/Open-Lab-Starter-Kit/OLSK-3D-Scanner/tree/main/OLSK_3D_Scanner_V2" target="_blank" rel="noopener">GitHub repository</a></li>
+					<li><a href="https://github.com/Open-Lab-Starter-Kit/OLSK-3D-Scanner/tree/main/OLSK_3D_Scanner_V2/cad" target="_blank" rel="noopener">CAD files</a></li>
+					<li><a href="https://github.com/Open-Lab-Starter-Kit/OLSK-3D-Scanner/tree/main/OLSK_3D_Scanner_V2/Software" target="_blank" rel="noopener">Software</a></li>
+					<li><a href="https://github.com/Open-Lab-Starter-Kit/OLSK-3D-Scanner/tree/main/OLSK_3D_Scanner_V2/BOM" target="_blank" rel="noopener">Bill of materials</a></li>
+					<li><a href="https://github.com/Open-Lab-Starter-Kit/OLSK-3D-Scanner/blob/main/OLSK_3D_Scanner_V2/OLSK_3D_Scanner_V2_Workbook.pdf" target="_blank" rel="noopener">Assembly workbook (PDF)</a></li>
+				</ul>
+
+				<h2>Credits</h2>
+				<p>Designed and built by <a href="https://www.inmachines.net/" target="_blank" rel="noopener">InMachines Ingrassia GmbH</a> as part of the <a href="https://www.inmachines.net/open-lab-starter-kit" target="_blank" rel="noopener">Open Lab Starter Kit (OLSK)</a> for the Dtec project at Fab City Hamburg.</p>
+				<p>Machine design: Wilhelm Schütze, Alberto Porri<br>
+				Software design: Marcello Tania, Sulaiman Tanbari</p>
+
+				<h2>License</h2>
+				<p>Hardware, CAD, PCB, and BOM: CERN Open Hardware Licence v2 (Weakly Reciprocal). Documentation and media: CC BY-SA 4.0.</p>
+			</div>
+		</div>
+	</section>
+
+	<footer class="site-footer">
+		<div class="container text-center">
+			<p class="footer-copy">&copy; 2026 <a href="http://marcellotania.com">Marcello Tania</a>. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/SmoothScroll.js"></script>
+	<script src="js/theme-scripts.js"></script>
+</body>
+</html>
