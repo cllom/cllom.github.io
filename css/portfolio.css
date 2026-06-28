@@ -742,6 +742,9 @@ body {
 }
 
 .gallery-item figcaption {
+	position: static;
+	width: auto;
+	height: auto;
 	font-size: 14px;
 	color: #888;
 	text-align: center;
