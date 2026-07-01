@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Flappy Bird AI — evolutionary neural network that plays Flappy Bird, later integrated with a UR robot arm at MIT HTMAA 2024.">
+	<meta name="author" content="Marcello Tania">
+	<link rel="icon" href="../favicon.ico">
+	<title>Flappy Bird AI — Marcello Tania</title>
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href="../css/style.css" rel="stylesheet">
+	<link href="../css/portfolio.css" rel="stylesheet">
+</head>
+<body id="page-top">
+
+	<nav class="navbar navbar-default navbar-fixed-top" id="main-nav">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-nav" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="../index.html">Marcello Tania</a>
+			</div>
+			<div class="collapse navbar-collapse" id="site-nav">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="../index.html#about">About</a></li>
+					<li><a href="../index.html#portfolio">Work</a></li>
+					<li><a href="../index.html#contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<section class="project-page">
+		<div class="container">
+			<p class="project-back"><a href="../index.html#portfolio">&larr; Back to portfolio</a></p>
+
+			<div class="project-header text-center">
+				<span class="section-label">Artificial Intelligence</span>
+				<h1>Flappy Bird AI</h1>
+				<p class="project-subtitle">Evolutionary neural network &middot; Pygame &middot; Robot arm integration</p>
+			</div>
+
+			<div class="project-hero text-center">
+				<img src="../images/flappyBird/flappyBird.jpg" alt="Flappy Bird AI gameplay" class="img-responsive project-image">
+			</div>
+
+			<div class="modal-works project-tags">
+				<span>Software</span><span>Machine Learning</span><span>Robotics</span>
+			</div>
+
+			<div class="project-content">
+				<p>An evolutionary neural network that learns to play <em>Flappy Bird</em> in Pygame. The project started as a standalone AI experiment in 2021 and was later extended during <a href="https://fab.cba.mit.edu/classes/863.24/people.html" target="_blank" rel="noopener">MAS.863 — How to Make (Almost) Anything (2024)</a> at MIT, where the same game logic was connected to a UR robot arm that physically pressed the space bar.</p>
+
+				<h2>How It Works</h2>
+				<p>Each bird is controlled by a feedforward neural network with four inputs — bird height, pipe horizontal position, bottom pipe height, and top pipe height — and one output that decides whether to flap. A population of birds is evolved over many generations using tournament selection, crossover, and mutation until the best network survives the longest.</p>
+
+				<div class="project-gallery project-gallery--contain">
+					<figure class="gallery-item gallery-item--wide">
+						<div class="gallery-image-wrap">
+							<img src="../images/flappy-bird/diagram.jpeg" alt="Automated Flappy Bird system diagram">
+						</div>
+						<figcaption>Automated Flappy Bird system — game, neural network, and robot control</figcaption>
+					</figure>
+					<figure class="gallery-item gallery-item--wide">
+						<div class="gallery-image-wrap">
+							<img src="../images/flappy-bird/collision.jpeg" alt="Flappy Bird physics and collision diagram">
+						</div>
+						<figcaption>Game physics and collision detection</figcaption>
+					</figure>
+				</div>
+
+				<h2>Robot Arm Integration</h2>
+				<p>During Wildcard Week at MIT, the project was expanded into a group assignment with the CBA team. The goal: build the best Flappy Bird player in the world — using a real robot.</p>
+				<p>Hye Jun Youn designed a 3D-printed robotic paw attached to a UR arm. The game and robot ran as two separate programs connected over TCP sockets: the Pygame client sent <code>MOVE_UP</code> and <code>MOVE_DOWN</code> commands, and a Python server on the robot side translated those into linear end-effector moves that pressed and released the keyboard.</p>
+
+				<div class="project-gallery project-gallery--contain">
+					<figure class="gallery-item gallery-item--wide">
+						<div class="gallery-image-wrap">
+							<img src="../images/flappy-bird/paw.jpeg" alt="Robotic paw design attached to UR arm">
+						</div>
+						<figcaption>Robotic paw design for pressing the space bar</figcaption>
+					</figure>
+					<figure class="gallery-item gallery-item--wide">
+						<video controls playsinline width="848" height="480" style="display:block;max-width:100%;height:auto;background:#000;">
+							<source src="../images/flappy-bird/flappybird.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+						<figcaption>Robot arm playing Flappy Bird</figcaption>
+					</figure>
+				</div>
+
+				<p>Key challenges included robot path planning, optimizing press distance versus timing delays, and server lag between the game loop and robot communication. Running the game and robot as separate processes helped keep synchronization stable.</p>
+
+				<h2>Team (HTMAA 2024 Wildcard Week)</h2>
+				<ul>
+					<li><strong>Marcello Tania</strong> — evolutionary neural network and game implementation</li>
+					<li><strong>Hye Jun Youn</strong> — robotic paw design and documentation</li>
+					<li><strong>Michelle Kim</strong> — system integration and path planning</li>
+					<li><strong>Jonny Cohen</strong> — system integration and robot–server communication</li>
+					<li><strong>Alex Kyaw</strong> — TA support and robot safety training</li>
+				</ul>
+
+				<h2>Links</h2>
+				<ul class="project-links">
+					<li><a href="https://github.com/cllom/Machine-Playing-Flappy-Bird" target="_blank" rel="noopener">GitHub repository</a></li>
+					<li><a href="https://fab.cba.mit.edu/classes/863.24/people/HyeJunYoun/week14/week14.html" target="_blank" rel="noopener">HTMAA 2024 — Wildcard Week documentation</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<footer class="site-footer">
+		<div class="container text-center">
+			<p class="footer-copy">&copy; 2026 <a href="http://marcellotania.com">Marcello Tania</a>. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/SmoothScroll.js"></script>
+	<script src="../js/theme-scripts.js"></script>
+</body>
+</html>
